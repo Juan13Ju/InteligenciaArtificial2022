@@ -1,5 +1,5 @@
 import numpy as np
-
+# Juarez Ubaldo Juan Aurelio - 421095568
 class genAlgo:
     def __init__(self, n_pop, iter, r_cross, r_mut, longitud):
         # El tamaño de la poblacion
@@ -68,6 +68,6 @@ class genAlgo:
             pop = children
         return [best, bestEval]
 
-gen = genAlgo(10, 100, .65, .1, 10)
+gen = genAlgo(10, 50, .3, .9, 10)
 res = gen.geneticAlgo()
-print(f"El mejor gen es : {res[0]} con valor : {res[1]}")
+print(f"El mejor gen es : {res[0]}, con valor : {res[1]}")
